@@ -10,7 +10,7 @@
 </head>
 <body>
     <div class="container-fluid">
-        <div class="row position-relative">
+        <div class="row justify-content-between">
             <div class="d-flex flex-row mb-2">
                 <i class="fa-brands fa-instagram p-1"></i>
                 <h4 class="p-1"> Instagram </h4>
@@ -18,7 +18,37 @@
             <div class="row ">
                 <ul class="nav nav-pills">
                     <li class="nav-item px-1">
-                      <button type="button" class="btn btn-success" aria-current="page" href="#">Create a new Post</button>
+                     
+<button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+  Create a New Profile
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="staticBackdropLabel">Create a New Post</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+        <div class="mb-3">
+          <label for="message-text" class="col-form-label"> <strong>Caption:</strong></label>
+          <textarea class="form-control text-muted" id="message-text">Add the caption of your post here</textarea>
+        </div>
+      </form>
+      <div class="d-inline">
+      <button type="button" class="btn border border-secondary"><i class="fa-solid fa-camera"></i></button>
+      <button type="button" class="btn border border-secondary"><i class="fa-solid fa-location-dot"></i></button>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-success">Publish</button>
+      </div>
+    </div>
+  </div>
+</div>
                     </li>
                     <li class="nav-item dropdown">
                       <a class="nav-link dropdown-toggle bg-secondary text-light" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false"><i class="fa-solid fa-gear"></i></a>
