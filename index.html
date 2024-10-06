@@ -10,60 +10,66 @@
 </head>
 <body>
     <div class="container-fluid">
-        <div class="row justify-content-between">
-            <div class="d-flex flex-row mb-2">
+      <div class="d-flex">
+        <div class="row p-2 flex-grow-1">
+            <div class="d-flex flex-row my-1">
                 <i class="fa-brands fa-instagram p-1"></i>
                 <h4 class="p-1"> Instagram </h4>
             </div>
-            <div class="row ">
-                <ul class="nav nav-pills">
-                    <li class="nav-item px-1">
+        </div>
+        <div class="my-1">
+          <ul class="nav nav-pills">
+            <li class="nav-item">
+              <div> 
+                <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                 Create a New Post
+                </button>
+                
+               
+                <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="staticBackdropLabel">Create a New post</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div> 
+                      <div class="modal-body">  
+                        <div class="mb-3">
+                        <label for="message-text" class="col-form-label"> <strong>Caption:</strong></label>
+                        <textarea class="form-control text-muted" id="message-text">Add the caption of your post here</textarea>
+                        </div>
+                        <div class="d-inline">
+                        <button class="btn  text-dark border border-secondary-subtle"><i class="fa-solid fa-camera"></i></button>
+                        <button class="btn  text-dark border border-secondary-subtle"><i class="fa-solid fa-location-dot"></i></button>
+                       </div>
+                       </div>
                      
-<button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-  Create a New Profile
-</button>
-
-<!-- Modal -->
-<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h1 class="modal-title fs-5" id="staticBackdropLabel">Create a New Post</h1>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        <form>
-        <div class="mb-3">
-          <label for="message-text" class="col-form-label"> <strong>Caption:</strong></label>
-          <textarea class="form-control text-muted" id="message-text">Add the caption of your post here</textarea>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-success">Publish</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+              </div>
+             
+            </li>
+            <li class="nav-item dropdown px-1">
+              <button class="nav-link dropdown-toggle bg-secondary text-light" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false"><i class="fa-solid fa-gear"></i></button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Profile</a></li>
+                <li><a class="dropdown-item" href="#">Accesibily</a></li>
+                <li><a class="dropdown-item" href="#">Privacy and Data</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item text-danger" href="#">Log Out</a></li>
+              </ul>
+            </li>
+          </ul>
         </div>
-      </form>
-      <div class="d-inline">
-      <button type="button" class="btn border border-secondary"><i class="fa-solid fa-camera"></i></button>
-      <button type="button" class="btn border border-secondary"><i class="fa-solid fa-location-dot"></i></button>
       </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-success">Publish</button>
-      </div>
-    </div>
-  </div>
-</div>
-                    </li>
-                    <li class="nav-item dropdown">
-                      <a class="nav-link dropdown-toggle bg-secondary text-light" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false"><i class="fa-solid fa-gear"></i></a>
-                      <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Profile</a></li>
-                        <li><a class="dropdown-item" href="#">Accesibility</a></li>
-                        <li><a class="dropdown-item" href="#">Privacy and Data</a></li>
-                        <li><hr class="dropdown-divider"></li>
-                        <li><a class="dropdown-item text-danger" href="#">Log out</a></li>
-                      </ul>
-                    </li>
-                 </ul>
-            </div>
-        </div>
-        
+          
+       
         <div>
             <ul class="nav nav-tabs justify-content-center" id="myTab" role="tablist">
                 <li class="nav-item" role="presentation">
