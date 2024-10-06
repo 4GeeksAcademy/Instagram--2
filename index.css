@@ -1,0 +1,16 @@
+.fa-brands {
+    font-size:150%
+}
+
+.nav-tabs .nav-link {
+    border: lightgrey;
+ }
+ .nav-tabs {
+    border-bottom: transparent;
+    bs-nav-tabs-link-active-color: blue;
+ }
+.nav {
+    bs-nav-link-color:rgb(16, 38, 236);
+    bs-nav-link-hover-color:blue;
+    bs-nav-link-disabled-color: blue;
+}
